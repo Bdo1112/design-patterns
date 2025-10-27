@@ -1,0 +1,30 @@
+{
+  "name": "observer-pattern-practice",
+  "version": "1.0.0",
+  "description": "To practice Observer pattern",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "clean": "rm -rf .dist",
+    "prebuild": "npm run clean",
+    "build": "tsc",
+    "start": "node .dist/index.js",
+    "dev:db": "tsx src/db-server/index.ts",
+    "dev:caller": "tsx src/caller-server/index.ts",
+    "debug:db": "tsx --inspect src/db-server/index.ts",
+    "debug:caller": "tsx --inspect src/caller-server/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^5.0.4",
+    "@types/node": "^24.9.1",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
